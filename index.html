@@ -5,8 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page - Matrix</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <section class="hero">
+        <div class="hero__content">
+            <h1 class="hero__content__branding">
+                <img src="./dist/images/matrix-logo-PNG.png" alt="The Matrix">
+            </h1>
+            <h3 class="title--small">
+                Lorem ipsum dolor sit amet consectetur.
+            </h3>
+            <p>
+                <a href="#" class="link-text">Pílula azul ou pílula vermelha?</a>
+                <br>
+                <span class="text">
+                    R$ 27,90/mes ou R$ 279,90/ano
+                </span>
+            </p>
+            <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo">
+                    <img src="./dist/images/pilula-azul.png" alt="">
+                    <button class="hero__content__combos__combo__button--blue">Assine agora</button>
+                    <span class="text">R$ 45,90/mes*</span>
+                </li>
+                <li class="hero__content__combos__combo">
+                    <img src="./dist/images/piula-vermelho.png" alt="">
+                    <button class="hero__content__combos__combo__button--red">Assine agora</button>
+                    <span class="text">R$ 45,90/mes*</span>
+                </li>
+            </ul>
+            <p class="text--small">
+                *O preco pode variar caso a assinatura seja feita em outra plataforma.
+            </p>
+        </div>
+    </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="matrix" class="shows__tabs__button shows__tabs__button--is-active">Matrix</button>
+            <button data-tab-button="matrix_reloaded" class="shows__tabs__button">Matrix Reloaded</button>
+            <button data-tab-button="matrix_revolutions" class="shows__tabs__button">Matrix Revolutions</button>
+            <button data-tab-button="matrix_ressurrections" class="shows__tabs__button">Matrix Resurrections</button>            
+        </nav>
+        <ul data-tab-id="matrix" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrix1999-1.png" alt="Capa Matrix 1999">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrix1999-2.png" alt="Cena Matrix 1999">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrix1999-3.png" alt="Cena Matrix 1999">
+            </li>
+        </ul>
+        <ul data-tab-id="matrix_reloaded" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrealoded-1.png" alt="Capa Matrix 1999">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrealoded-2.png" alt="Capa Matrix 1999">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrealoded-3.png" alt="Capa Matrix 1999">
+            </li>
+        </ul>
+        <ul data-tab-id="matrix_revolutions" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrevolutions-1.png" alt="Capa Matrix 1999">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrevolutions-2.png" alt="Capa Matrix 1999">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrevolutions-3.png" alt="Capa Matrix 1999">
+            </li>
+        </ul>
+        <ul data-tab-id="matrix_ressurrections" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixresurrections-1.png" alt="Capa Matrix 1999">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixresurrections-2.png" alt="Capa Matrix 1999">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixresurrections-3.png" alt="Capa Matrix 1999">
+            </li>
+        </ul>
+    </section>
+
+    <script src="./src/main.js"></script>
 </body>
 </html>

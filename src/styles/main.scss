@@ -1,5 +1,63 @@
-$bgcolor: rgb(23, 23, 23);
+@use 'variaveis';
+@use 'hero';
+@use 'shows';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
 body {
-    background-color: $bgcolor;
+    background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 14px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 30px) {
+    @include text($fontSize);
+    color: variaveis.$corTextoSecundario
+}
+
+.text--big {
+    @include text(16px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
+}
+
+.title--big {
+    @include title(36px);
+}
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(24px);
+}
+
+.link-text {
+    @include text(18px);
+    color: variaveis.$corTextoSecundario;
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
 }
