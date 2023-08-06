@@ -1,6 +1,8 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use 'films';
+@use 'watch-anywhere';
 
 * {
     margin: 0;
@@ -38,6 +40,7 @@ body {
 
 .title--big {
     @include title(36px);
+    font-weight: normal;
 }
 
 .title {
@@ -60,4 +63,17 @@ li {
 
 button {
     cursor: pointer;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    border: none;
 }
