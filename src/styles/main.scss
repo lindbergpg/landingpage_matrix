@@ -2,7 +2,7 @@
 @use 'hero';
 @use 'shows';
 @use 'films';
-@use 'watch-anywhere';
+@use 'available-devices';
 
 * {
     margin: 0;
@@ -21,7 +21,7 @@ body {
     color: variaveis.$corTextoPrincipal;
 }
 
-@mixin title($fontSize: 30px) {
+@mixin title($fontSize: 24px) {
     @include text($fontSize);
     color: variaveis.$corTextoSecundario
 }
@@ -39,16 +39,18 @@ body {
 }
 
 .title--big {
-    @include title(36px);
+    @include title(28px);
     font-weight: normal;
 }
 
 .title {
     @include title;
+    font-weight: normal;
 }
 
 .title--small {
-    @include title(24px);
+    @include title(18px);
+    font-weight: normal;
 }
 
 .link-text {
@@ -76,4 +78,44 @@ button {
     margin-top: 2vw;
     margin-bottom: 8px;
     border: none;
+}
+
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text__container {
+        padding: 0 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image-full-width {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &__text__container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
 }
