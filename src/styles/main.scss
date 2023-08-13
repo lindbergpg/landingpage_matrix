@@ -113,6 +113,10 @@ button {
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
+    @media (max-width: 768px) {
+        display: block;
+    }
+
     img {
         max-width: 100%;
     }
@@ -142,6 +146,12 @@ button {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media (max-width: 768px) {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
         }
     }
 

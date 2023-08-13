@@ -15,6 +15,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
 
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
         &--is-active {
             display: grid;
         }
@@ -32,6 +36,12 @@
         display: flex;
         justify-content: center;
 
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 32px;
+        }
+
         &__button {
             color: variaveis.$corTextoDestaque;
             font-size: 20px;
@@ -43,6 +53,10 @@
 
             &--is-active {
                 border-color: variaveis.$corTextoDestaque;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
             }
         }
     }
