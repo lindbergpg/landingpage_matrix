@@ -19,19 +19,19 @@
             
             img {
                 width: 100%;
-                margin: 0 auto 38px;
+                margin: 0 auto 34px;
             }
         }
 
         .title {
-            margin-bottom: 56px;
+            margin-bottom: 48px;
         }
 
         p {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
 
             &:last-child {
-                margin-top: 40px;
+                margin-top: 26px;
             }
         }
 
@@ -50,7 +50,7 @@
                     background-color: variaveis.$botaoRed;
 
                     &:hover {
-                        background-color: lighten(variaveis.$botaoRed, 3%);
+                        background-color: lighten(variaveis.$botaoRed, 5%);
                     }
                 }
 
@@ -58,7 +58,7 @@
                     background-color: variaveis.$botaoBlue;
 
                     &:hover {
-                        background-color: lighten(variaveis.$botaoBlue, 3%);
+                        background-color: lighten(variaveis.$botaoBlue, 5%);
                     }
                 }
             }
