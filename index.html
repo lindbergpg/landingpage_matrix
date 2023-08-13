@@ -10,31 +10,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/matrix-logo-PNG.png" alt="The Matrix">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button button--secondary" href="#">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a class="button button--dark" href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/matrix-logo-PNG.png" alt="The Matrix">
-            </h1>
+            </div>
             <h3 class="title">
-                Lorem ipsum dolor sit amet consectetur.
+                The Matrix - streaming
             </h3>
             <p>
                 <a href="#" class="link-text">Pílula azul ou pílula vermelha?</a>
-                <br>
-                <span class="text">
-                    R$ 27,90/mes ou R$ 279,90/ano
-                </span>
             </p>
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/pilula-azul.png" alt="">
                     <button class="hero__content__combos__combo__button--blue button">Assine agora</button>
-                    <span class="text">R$ 45,90/mes*</span>
+                    <span class="text">R$ 17,90/Escolha dois para assistir*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/piula-vermelho.png" alt="">
                     <button class="hero__content__combos__combo__button--red button">Assine agora</button>
-                    <span class="text">R$ 45,90/mes*</span>
+                    <span class="text">R$ 34,90/Assita todos*</span>
                 </li>
             </ul>
             <p class="text--small">
@@ -60,6 +71,15 @@
             <li class="shows__list__item">
                 <img src="./dist/images/shows/matrix1999-3.png" alt="Cena Matrix 1999">
             </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrix1999-3.png" alt="Cena Matrix 1999">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrix1999-3.png" alt="Cena Matrix 1999">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrix1999-3.png" alt="Cena Matrix 1999">
+            </li>
         </ul>
         <ul data-tab-id="matrix_reloaded" class="shows__list">
             <li class="shows__list__item">
@@ -67,6 +87,15 @@
             </li>
             <li class="shows__list__item">
                 <img src="./dist/images/shows/matrixrealoded-2.png" alt="Cena Matrix Realoded">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrealoded-3.png" alt="Cena Matrix Realoded">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrealoded-3.png" alt="Cena Matrix Realoded">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrealoded-3.png" alt="Cena Matrix Realoded">
             </li>
             <li class="shows__list__item">
                 <img src="./dist/images/shows/matrixrealoded-3.png" alt="Cena Matrix Realoded">
@@ -82,6 +111,15 @@
             <li class="shows__list__item">
                 <img src="./dist/images/shows/matrixrevolutions-3.png" alt="Cena Matrix Revolutions">
             </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrevolutions-3.png" alt="Cena Matrix Revolutions">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrevolutions-3.png" alt="Cena Matrix Revolutions">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixrevolutions-3.png" alt="Cena Matrix Revolutions">
+            </li>
         </ul>
         <ul data-tab-id="matrix_ressurrections" class="shows__list">
             <li class="shows__list__item">
@@ -89,6 +127,15 @@
             </li>
             <li class="shows__list__item">
                 <img src="./dist/images/shows/matrixresurrections-2.png" alt="Cena Matrix Resurrections">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixresurrections-3.png" alt="Cena Matrix Resurrections">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixresurrections-3.png" alt="Cena Matrix Resurrections">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/shows/matrixresurrections-3.png" alt="Cena Matrix Resurrections">
             </li>
             <li class="shows__list__item">
                 <img src="./dist/images/shows/matrixresurrections-3.png" alt="Cena Matrix Resurrections">
@@ -216,6 +263,49 @@
             </li>
         </ul>
     </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/matrix-logo-PNG.png" alt="The Matrix">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Portugues</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre o The Matrix</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ® 2023 The Matrix. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                The Matrix é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço The Matrix é comercializado por The Matrix Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.123, 12.456, 12.789, Piso 01, Brasilia/DF – CEP 12345-123, Brasil e CNPJ/M 12.012.345/0001-11
+            </p>
+        </div>
+    </footer>
 
     <script src="./src/main.js"></script>
 </body>

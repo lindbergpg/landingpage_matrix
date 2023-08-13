@@ -7,6 +7,11 @@
     text-align: center;
     background-size: cover;
 
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+    }
+
     &__content {
         max-width: 520px;
 
@@ -42,11 +47,19 @@
                 }
 
                 &__button--red {
-                    background-color: #f61132;
+                    background-color: variaveis.$botaoRed;
+
+                    &:hover {
+                        background-color: lighten(variaveis.$botaoRed, 3%);
+                    }
                 }
 
                 &__button--blue {
-                    background-color: #2c94e9;
+                    background-color: variaveis.$botaoBlue;
+
+                    &:hover {
+                        background-color: lighten(variaveis.$botaoBlue, 3%);
+                    }
                 }
             }
         }
